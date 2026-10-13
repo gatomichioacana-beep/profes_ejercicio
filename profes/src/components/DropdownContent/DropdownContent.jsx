@@ -1,8 +1,8 @@
-import React from 'react'
+import "./DropdownContent.css"
 
-const DropdownContent = () => {
+const DropdownContent = ({children, open}) => {
   return (
-    <div>DropdownContent</div>
+    <div className={`dropdown-content ${open ? "content-open":null}`}>{children}</div>
   )
 }
 
