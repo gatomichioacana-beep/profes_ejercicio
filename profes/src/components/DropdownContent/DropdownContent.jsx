@@ -1,9 +1,13 @@
+import { forwardRef } from "react"
 import "./DropdownContent.css"
 
-const DropdownContent = ({children, open}) => {
+const DropdownContent = forwardRef((props, ref) => {
+  const {children, open, top}=props;
   return (
-    <div className={`dropdown-content ${open ? "content-open":null}`}>{children}</div>
+    <div ref={ref} className={`dropdown-content ${open ? "content-open":null}`}
+    style={{top: top ? `${top}px` : "100%"}}
+    >{children}</div>
   )
-}
+});
 
 export default DropdownContent

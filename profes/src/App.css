@@ -9,14 +9,47 @@
 #uno{
   background-color: white;
   text-align: center;
+  background-image: url('./assets/logo.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 500px;
+  background-attachment: fixed;
+  min-height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(255,255,255,0.55), rgba(255,255,255,0.55)), url('./assets/logo.png');
 }
-/* #dos{
-  background-color: rgb(155, 63, 63);
-  color:white;
-  text-align: left;
-} */
 #menu{
   margin-bottom: 10px;
   margin-left: 10px;
   margin-right: 10px;
+  font-family: Mv boli;
+}
+table{
+  width: 100%;
+  border-collapse: collapse;
+  background-color: brown;
+}
+tr{
+  display: table-row;
+}
+td{
+  display: table-cell;
+  padding: 10px;
+}
+
+
+h1 {
+  display: block;
+  width: 100%;
+  margin-top: 30px;
+  margin-bottom: 5px;
+  padding: 0;
+  font-family: 'Montserrat', 'Segoe UI', sans-serif;
+  font-size: 2.6rem;
+  font-weight: 800;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: #7e0f0f; 
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
 }
